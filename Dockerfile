@@ -23,6 +23,5 @@ RUN    dnf -y update \
 
 USER 1000
 
-EXPOSE 4822
-CMD [ "/sbin/guacd", "-b", "0.0.0.0", "-f" ]
+CMD [ "/sbin/guacd", "-b", "127.0.0.1", "-L", "debug", "-f" ]
 
