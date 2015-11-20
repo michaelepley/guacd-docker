@@ -23,5 +23,5 @@ RUN    dnf -y update \
 
 USER 1000
 
-CMD [ "/sbin/guacd", "-b", "127.0.0.1", "-L", "debug", "-f" ]
+CMD [ "/sbin/guacd", "-b", "localhost", "-L", "debug", "-f" ]
 
