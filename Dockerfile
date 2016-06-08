@@ -21,6 +21,9 @@ RUN    dnf -y update \
     && dnf -y clean all \
     && chmod a+rwX /var/lib/guacd
 
+RUN    dnf -y install \
+           net-tools
+
 USER 1000
 
 CMD [ "/sbin/guacd", "-b", "localhost", "-L", "debug", "-f" ]
